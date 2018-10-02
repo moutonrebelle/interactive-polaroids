@@ -12,13 +12,13 @@ html {
   background-color: #fff;
   border-radius: 4px;
   box-shadow: 1px 4px 6px rgba(0, 0, 0, .5);
+  transition: all 150ms linear;
 }
 
 .polaroid:first-child {
   transform: rotate(-15deg);
   left: 12em;
   top: 7em;
-  z-index: 1;
 }
 
 .polaroid:nth-child(2) {
@@ -51,5 +51,7 @@ html {
 }
 
 .polaroid:hover {
-
+  transform: rotate(0deg);
+  z-index: 1000;
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0);
 }
